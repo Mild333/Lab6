@@ -6,7 +6,12 @@ void setup(){
 void loop(){
   int a = 0;
   a = analogRead(A0);
+  double b = 0;
 
-  Serial.println(a);
+  b = (3.3/4096)*a;
+
+  Serial.println("แรงดันอินพุตที่ขา A0: ");
+  Serial.println(b);
+  Serial.println("โวลต์ ");
   delay(500);
 }
