@@ -4,7 +4,7 @@ void setup(){
 
 void loop(){
   int a = 0;
-  a = analogRead(A0):
+  a = analogRead(A0);
 
   Serial.println(a);
   delay(500);
